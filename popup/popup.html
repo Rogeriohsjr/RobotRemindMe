@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Robot Notification</title>
+    <link href="popup.css" rel="stylesheet" type="text/css">
+    <script src="popup.js"></script>
+  </head>
+  <body class="container">
+    <div class="div100">
+      <h1>
+        Robot Notification
+      </h1>
+      <form id="options">
+        <input type="checkbox" name="isActivated" checked>
+        Display a notification every
+        <select name="frequency">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>10</option>
+          <option>15</option>
+          <option>20</option>
+          <option>25</option>
+          <option>30</option>
+        </select>
+        minute(s).
+      </div>
+      <div class="div100">
+        <div class="div50 divFloatLeft">
+          <img name="robot" class="robot" src=""  />
+        </div>
+        <div class="div50 divFloatLeft">
+          <h1><span id="robotMessage" /></h1>
+        </div>
+      </div>
+      <div>
+        <input type="button" id="btnCall" name="btnCall" title="Call New Notification" value="Call Notification" />
+      </div>
+    </form>
+  </body>
+</html>

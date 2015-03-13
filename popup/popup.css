@@ -1,0 +1,23 @@
+.container{
+	width:400px;
+	height: 400px;
+}
+
+.div100{
+	width: 100%;
+}
+.div50{
+	width: 49%;
+}
+.divFloatLeft{
+	float: left;
+}
+.divFloatRigth{
+	float: right;
+}
+
+
+.robot{
+	width: 150px;
+	height: 150px;
+}

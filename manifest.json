@@ -1,0 +1,35 @@
+{
+	"manifest_version" : 2,
+	"name" : "Robot Taks",
+	"version" : "1.0",
+	"description" : "Just another awesome plugin",
+	"permissions": [
+		"unlimitedStorage",
+        "tabs",
+		"notifications"
+	],
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "js": ["files/jquery-ui.min.js"],
+	  "run_at":"document_end",
+	  "all_frames": true
+    }
+  ],
+	"web_accessible_resources": [
+		"files/jquery-ui.min.js",
+
+		"images/icon.png",
+		"images/Robot.png",
+		"images/Robot2.png",
+		"images/Robot3.png"
+	  ],
+	"browser_action": {
+      "default_title": "Robot Task",
+      "default_icon": "images/icon.png",
+      "default_popup": "popup/popup.html"
+	},
+	"background":{
+		"scripts":["background/background.js"]
+	}
+}
